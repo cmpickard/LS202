@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Store Catalog</title>
+    <style>
+      /* CSS reset */
+      ul, ol { list-style: none; }
+      h1, h2, h3, h4, h5, h6, pre, code { font-size: 1em; }
+      ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+      fieldset, input, dl, dt, dd, figure, figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      a img, :link img, :visited img, fieldset { border: none; }
+      address { font-style: normal; }
+      header, section, article, nav, footer, hgroup, details, summary, figure, main {
+        display: block;
+      }
+      mark {
+        color: inherit;
+        background-color: transparent;
+      }
+      abbr { border: none; }
+      summary::-webkit-details-marker { display: none; }
+      /* end reset */
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(255,213,5);
+      }
+
+      header {
+        display: block;
+        margin: 0 auto;
+        height: 104.5px;
+        width: 900px;
+        border-bottom-left-radius: 17px;
+        border-bottom-right-radius: 17px;
+        background-color: rgb(4, 126, 193);
+      }
+
+      header h1 {
+        padding-left: 25px;
+        padding-top: 30px;
+        font-size: 38.5px;
+        color: white;
+      }
+
+      main {
+        margin: 0 auto;
+        background-color: rgb(236,236,236);
+        box-sizing: border-box;
+        width: 900px;
+        padding: 25px 25px 33px;
+        overflow: hidden;
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+
+      main h2 {
+        font-size: 32px;
+        margin-bottom: 18px;
+      }
+
+      main ul {
+        width: 900px;
+      }
+
+      main ul li {
+        padding: 15px 20px 20px 20px;
+        box-sizing: border-box;
+        margin: 7.5px 8.5px 10px 8.5px;
+        width: 200px;
+        height: 235px;
+        border: 10px;
+        float: left;
+        background-color: white;
+      }
+
+      .first-column {
+        margin-left: 0;
+      }
+
+      main ul li img {
+        display: block;
+        width: auto;
+        max-height: 140px;
+        margin: 0 auto;
+      }
+
+      figcaption {
+        display: block;
+        font-size: 19px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-left: -5px;
+      }
+
+      figcaption div {
+        font-weight: 400;
+      }
+
+      .price {
+        background-color: white;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+
+      div.image-zoom {
+        width: 100vw;
+        height: 130vh;
+        background-color: rgba(0, 0, 0, 0.4);     
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+      }
+
+      div.image-zoom img {
+        position: absolute;
+        left: 40%;
+        top: 33%;
+      }
+
+      input:checked + div {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Paramiicio</h1>
+    </header>
+    <main>
+      <h2>All Products</h2>
+      <ul>
+        <label>
+          <input class="checkbox" type="checkbox" hidden>
+          <div class="image-zoom"><img src="images/aurelia.jpg"></div>
+          <li class="first-column">
+            <figure>
+              <img src="images/aurelia.jpg">
+              <figcaption>Aurelia<div class="price">$12.99</div></figcaption>
+            </figure>
+          </li>
+        </label>
+        <label>
+          <input class="checkbox" type="checkbox" hidden>
+          <div class="image-zoom"><img src="images/polycaryum.jpg"></div>
+          <li>
+            <figure>
+              <img src="images/polycaryum.jpg">
+              <figcaption>Polycaryum<div class="price">$12.99</div></figcaption>
+            </figure>
+          </li>
+        </label>
+        <label>
+          <input class="checkbox" type="checkbox" hidden>
+          <div class="image-zoom"><img src="images/chlorelligerum.jpg"></div>
+          <li>
+            <figure>
+              <img src="images/chlorelligerum.jpg">
+              <figcaption>Chlorelligerum<div class="price">$12.99</div></figcaption>
+            </figure>
+          </li>
+        </label>
+        <label>
+          <input class="checkbox" type="checkbox" hidden>
+          <div class="image-zoom"><img src="images/sonneborni.jpg"></div>
+          <li>
+            <figure>
+              <img src="images/sonneborni.jpg">
+              <figcaption>Sonneborni<div class="price">$12.99</div></figcaption>
+            </figure>
+          </li>
+        </label>
+        <label>
+          <input class="checkbox" type="checkbox" hidden>
+          <div class="image-zoom"><img src="images/ugandae.jpg"></div>
+          <li class="first-column">
+            <figure>
+              <img src="images/ugandae.jpg">
+              <figcaption>Ugandae<div class="price">$12.99</div></figcaption>
+            </figure>
+          </li>
+        </label>
+
+        <label>
+          <input class="checkbox" type="checkbox" hidden>
+          <div class="image-zoom"><img src="images/ugandae.jpg"></div>
+          <li>
+            <figure>
+              <img src="images/woodruffi.jpg">
+              <figcaption>Woodruffi<div class="price">$12.99</div></figcaption>
+            </figure>
+          </li>
+        </label>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Practice</title>
+    <style>
+      fieldset {
+        border: none;
+        line-height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+      <dl>
+        <dt><label for="first-name">First Name:</label></dt>
+        <dd><input type="text" id="first-name" name="first-name" required></dd><br>
+
+        <dt><label for="last-name">Last Name:</label></dt>
+        <dd><input type="text" id="last-name" name="last-name" required></dd><br>
+
+        <dt><label for="email">Email:</label></dt>
+        <dd><input type="email" id="email" name="email" autocomplete="off"
+              autocorrect="off" autocapitalize="off" required></dd><br>
+
+        <dt><label for="phone-number">Phone Number:</label></dt>
+        <dd><input type="tel" id="phone-number" name="phone-number" placeholder="(###)-####" required></dd><br>
+
+        <dt><label for="tel-type">Phone Number Type:</label></dt>
+        <dd><select name="tel-type" id="tel-type">
+          <option value="" disable>Choose One:</option>
+          <option value="home" selected>Home</option>
+          <option value="mobile">Mobile</option>
+          <option value="business">Business</option>
+        </select></dd>
+
+        <dt><label for="textbox">Comments:</label></dt>
+        <dd><textarea id="textbox" name="comments" rows="6" cols="80" placeholder="Type your comments here"></textarea></dd>
+      </dl>
+        <input type="submit" value="Send">
+      </fieldset>
+    </form>
+  </body>
+</html>

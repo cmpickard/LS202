@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Company Splash Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <style>
+      /* CSS reset */
+      ul, ol { list-style: none; }
+      h1, h2, h3, h4, h5, h6, pre, code { font-size: 1em; }
+      ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+      fieldset, input, dl, dt, dd, figure, figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      a img, :link img, :visited img, fieldset { border: none; }
+      address { font-style: normal; }
+      header, section, article, nav, footer, hgroup, details, summary, figure, main {
+        display: block;
+      }
+      mark {
+        color: inherit;
+        background-color: transparent;
+      }
+      abbr { border: none; }
+      summary::-webkit-details-marker { display: none; }
+      /* end reset */
+
+      body {
+        background-image: url("bg_body.gif");
+        background-size: stretch;
+        font-family: "Nunito Sans", sans-serif;
+        display: grid;
+        place-items: center;
+      }
+
+      header {
+        margin-top: 159px;
+        margin-bottom: 90px;
+
+      }
+
+      main {
+        background-color: rgb(255,255,255);
+        width: 1000px;
+      }
+
+      section {
+        margin: 10px;
+        display: grid;
+        place-items: center;
+        padding: 90px 80px 60px;
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: 36px;
+        color: rgb(30, 30, 30);
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-weight: bolder;
+        font-size: 24px;
+        color: rgb(62, 152, 178);
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: rgb(30, 30, 30);
+        font-size: 20px;
+        font-weight: 450;
+        text-align: center;
+      }
+
+      footer {
+        background-color: rgb(231,231,231);
+        width: 1000px;
+        padding: 30px 0;
+        margin-bottom: 144px;
+      }
+
+      footer :first-child img {
+        margin-left: 303px;
+      }
+
+      .icon {
+        position: relative;
+        top: 3px;
+      }
+
+      footer :last-child {
+        margin-right: 117px;
+      }
+      
+      span {
+        position: relative;
+        bottom: 5px;
+        padding: 0 16px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src='logo.png' name="logo">
+    </header>
+    <main>
+      <section>
+        <h1><span>&bull;</span> About Us <span>&bull;</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in.
+        </p>
+      </section>
+      <section>
+        <h1><span>&bull;</span> Our Founder <span>&bull;</span></h1>
+        <h2>Admiral Kerning</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a href="#"><img class='icon' src='icon_twitter.png'></a>
+      <a href="#"><img class='icon' src='icon_facebook.png'></a>
+      <a href="#"><img class='icon' src='icon_email.png'></a>
+    </footer>
+  </body>
+</html>

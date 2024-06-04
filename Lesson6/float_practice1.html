@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Float Practice</title>
+    <style>
+      body, section, article, aside, footer {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #ccc;
+      }
+
+      section {
+        background-color: white;
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+
+      article, aside {
+        box-sizing: border-box;
+        float: left;
+        padding: 1rem;
+      }
+
+      article {
+        box-sizing: border-box;
+        background-color: #ffc;
+        width: 70%;
+      }
+
+      aside {
+        background-color: #cfc;
+        float: none;
+        overflow: hidden;
+      }
+
+      section::after {
+        clear: both;
+        content: "";
+        display: block;
+      }
+
+      footer {
+        width: 100%;
+        display: block;
+        background-color: grey;
+        clear: both;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor tortor quis finibus accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc in suscipit felis, at vestibulum erat. Praesent pharetra malesuada lorem. Quisque est quam, interdum quis lectus ac, pulvinar interdum tellus. Mauris at orci iaculis, gravida tellus et, luctus orci. Donec interdum vulputate justo maximus porttitor. Phasellus scelerisque turpis non convallis tincidunt. Praesent nunc augue, aliquet sit amet dolor iaculis, tincidunt tempus arcu. Proin pretium tempus risus, eget laoreet velit pellentesque sit amet.
+        Phasellus risus arcu, consequat quis velit ac, condimentum placerat ante. Curabitur vel mollis quam. Nunc faucibus ex sed risus mattis cursus. Etiam mauris ipsum, venenatis sit amet convallis et, dignissim vel odio. Aliquam molestie mi nec maximus mattis. Cras suscipit sollicitudin tellus, non venenatis leo facilisis et. Pellentesque suscipit egestas diam, eu rhoncus sem posuere tempor. Aliquam vulputate diam non lacus interdum, nec egestas tellus volutpat. In bibendum ac ex at blandit. Integer elit turpis, semper cursus efficitur in, euismod et purus. Quisque sed ante sit amet nibh blandit mattis. Morbi ut turpis eu leo tristique accumsan a ac erat. Sed suscipit augue sit amet rutrum posuere. Donec finibus gravida ipsum, quis sodales nulla molestie non. Donec vehicula auctor eros sit amet iaculis. Praesent eu bibendum mi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor tortor quis finibus accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc in suscipit felis, at vestibulum erat. Praesent pharetra malesuada lorem. Quisque est quam, interdum quis lectus ac, pulvinar interdum tellus. Mauris at orci iaculis, gravida tellus et, luctus orci. Donec interdum vulputate justo maximus porttitor. Phasellus scelerisque turpis non convallis tincidunt. Praesent nunc augue, aliquet sit amet dolor iaculis, tincidunt tempus arcu. Proin pretium tempus risus, eget laoreet velit pellentesque sit amet.
+        Phasellus risus arcu, consequat quis velit ac, condimentum placerat ante. Curabitur vel mollis quam. Nunc faucibus ex sed risus mattis cursus. Etiam mauris ipsum, venenatis sit amet convallis et, dignissim vel odio. Aliquam molestie mi nec maximus mattis. Cras suscipit sollicitudin tellus, non venenatis leo facilisis et. Pellentesque suscipit egestas diam, eu rhoncus sem posuere tempor. Aliquam vulputate diam non lacus interdum, nec egestas tellus volutpat. In bibendum ac ex at blandit. Integer elit turpis, semper cursus efficitur in, euismod et purus. Quisque sed ante sit amet nibh blandit mattis. Morbi ut turpis eu leo tristique accumsan a ac erat. Sed suscipit augue sit amet rutrum posuere. Donec finibus gravida ipsum, quis sodales nulla molestie non. Donec vehicula auctor eros sit amet iaculis. Praesent eu bibendum mi.
+      </article>
+      <aside>
+        Sed ac mattis nisi, sit amet commodo dui. Praesent volutpat mauris ac nisl auctor, ut bibendum diam laoreet. Integer porttitor volutpat malesuada. Cras pellentesque ante nec risus commodo, id cursus dui sodales. Morbi lorem justo, aliquam eget leo et, ullamcorper fringilla velit. Quisque at tortor aliquet, ultricies ante finibus, vestibulum lorem. Morbi vel dolor lectus. Aliquam sit amet felis massa. Vestibulum nec ullamcorper ipsum, eget tincidunt quam. Nulla sit amet velit finibus, pulvinar diam ac, laoreet justo. Fusce purus quam, sodales eget lacus ac, interdum consectetur leo. Sed pellentesque tincidunt lectus sed ultricies. Quisque sit amet placerat turpis, eget ultrices ex. Curabitur semper suscipit sapien, id luctus sapien suscipit sed. Donec lectus est, eleifend eget sodales imperdiet, elementum id nulla.
+      </aside>
+      <footer>
+        Sed ac mattis nisi, sit amet commodo dui. Praesent volutpat mauris ac nisl auctor, ut bibendum diam laoreet. Integer porttitor volutpat malesuada. Cras pellentesque ante nec risus commodo, id cursus dui sodales. Morbi lorem justo, aliquam eget leo et, ullamcorper fringilla velit. Quisque at tortor aliquet, ultricies ante finibus, vestibulum lorem. Morbi vel dolor lectus. Aliquam sit amet felis massa. Vestibulum nec ullamcorper ipsum, eget tincidunt quam. Nulla sit amet velit finibus, pulvinar diam ac, laoreet justo. Fusce purus quam, sodales eget lacus ac, interdum consectetur leo. Sed pellentesque tincidunt lectus sed ultricies. Quisque sit amet placerat turpis, eget ultrices ex. Curabitur semper suscipit sapien, id luctus sapien suscipit sed. Donec lectus est, eleifend eget sodales imperdiet, elementum id nulla.
+      </footer>
+    </section>
+
+  </body>
+</html>
+

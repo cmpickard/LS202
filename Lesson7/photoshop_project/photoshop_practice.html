@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Photoshop Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+      /* css reset */
+      ul, ol { list-style: none; }
+      h1, h2, h3, h4, h5, h6, pre, code { font-size: 1em; }
+      ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+      fieldset, input, dl, dt, dd, figure, figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      a img, :link img, :visited img, fieldset { border: none; }
+      address { font-style: normal; }
+      header, section, article, nav, footer, hgroup, details, summary, figure, main {
+        display: block;
+      }
+      mark {
+        color: inherit;
+        background-color: transparent;
+      }
+      abbr { border: none; }
+      summary::-webkit-details-marker { display: none; }
+      /* end reset */
+
+      main {
+        width: 1100px;
+        height: 1400px;
+        background: linear-gradient(rgb(209, 219, 189), rgb(252, 255, 245));
+        font-family: "Roboto Condensed", sans-serif;
+      }
+
+      section {
+        box-sizing: border-box;
+        margin: 0 70px 18px 70px;
+        padding: 30px;
+        background-color: rgb(252, 255, 245);
+        height: 1190px;
+      }
+
+      header {
+        margin-left: 70px;
+        box-sizing: border-box;
+        /* display: flex; */
+        width: 960px;
+        padding: 20px 20px 0 20px;
+        font-size: 0;
+      }
+
+      footer {
+        margin-left: 70px;
+        font-size: 14px;
+      }
+
+      header #logo {
+        display: inline-block;
+        width: 390px;
+        margin-bottom: 10px;
+      }
+
+      header #logo h1 {
+        display: inline;
+        font-size: 36px;
+        font-weight: 450;
+        color: rgb(25, 52, 65);
+        position: relative;
+        bottom: 23px;
+        left: 10px;
+      }
+
+      header nav {
+        position: relative;
+        left: 5px;
+        top: 2.5px;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 530px;
+      }
+
+      img {
+        display: inline;
+      }
+
+      header ul {
+        display: inline-block;
+      }
+
+      header ul li {
+        background-color: rgb(252, 255, 245);
+        color: rgb(145, 170, 157);
+        font-size: 18px;
+        display: inline-block;
+        padding: 12px 40px;
+        border-radius: 10px 10px 0 0;
+        margin: 0 2.5px;
+      }
+
+      #home {
+        background-color: rgb(145, 170, 157);
+        color: rgb(252, 255, 245);
+      }
+
+      section {
+        color: rgb(82, 111, 130);
+        box-shadow: 0 5px 5px 1px rgb(185, 185, 185);
+        padding-bottom: 0px;
+        height: 1192px;
+      }
+
+      section h1 {
+        font-size: 32px;
+        font-weight: 400;
+        margin: 34px 0;
+      }
+
+      section p {
+        font-size: 18px;
+        margin: 16px 0;
+        line-height: 23px;
+        font-weight: 420;
+      }
+
+      section :nth-child(3) {
+        margin-top: -12px;
+      }
+
+      section :last-child {
+        margin-top: 24px;
+      }
+
+      #marsh {
+        width: 900px;
+        height: 384px;
+      }
+
+      #tree {
+        float: right;
+        width: 330px;
+        height: 495px;
+        margin-left: 35px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div id="logo">
+          <img src="Icon.png" name="Logo">
+          <h1 class="roboto-regular">Shutter Bug</h1>
+        </div>
+        <nav>
+          <ul>
+            <li id="home">Home</li>
+            <li>Gallery</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <img id="marsh" src="marsh.jpg">
+        <h1>Welcome to Shutter Bug</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit
+          amet nisl vel eros semper maximus at in quam. Suspendisse ac lectus
+          ac eros pulvinar finibus luctus sed magna. Duis eleifend placerat
+          metus, sed malesuada ipsum rhoncus viverra. Donec vel ullamcorper
+          lorem. Integer accumsan mauris vel ex porttitor, et pharetra nisi
+          finibus. Vestibulum vitae sagittis risus. Fusce ornare tempor purus
+          eget blandit. Quisque eu erat non odio lobortis sollicitudin ultrices
+          nec arcu. Pellentesque eget iaculis purus. Morbi ac libero egestas,
+          maximus ex id, mattis arcu. Praesent tincidunt justo non luctus
+          dapibus.
+        </p>
+        <img id="tree" src="tree.jpg">
+        <p>
+          Pellentesque vel congue dolor. Aenean varius lectus massa, ac pharetra
+          sapien egestas sit amet. Maecenas non ipsum convallis, vestibulum
+          augue eget, molestie urna. Donec a mauris pretium, eleifend felis eu,
+          dapibus mi. Nunc vel imperdiet arcu. Morbi hendrerit rhoncus eleifend.
+          Nullam sodales tincidunt consequat. Maecenas ut laoreet dui, et
+          hendrerit nisi.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit
+          amet nisl vel eros semper maximus at in quam. Suspendisse ac lectus ac
+          eros pulvinar finibus luctus sed magna. Duis eleifend placerat metus,
+          sed male- suada ipsum rhoncus viverra. Donec vel ullamcorper lorem.
+          Integer ac- cumsan mauris vel ex porttitor, et pharetra nisi finibus.
+          Vestibulum vitae sagittis risus. Fusce ornare tempor purus eget
+          blandit. Quisque eu erat non odio lobortis sollicitudin ultrices nec
+          arcu. Pellentesque eget iaculis purus. Morbi ac libero egestas,
+          maximus ex id, mattis arcu. Praesent tincidunt justo non luctus
+          dapibus.
+        </p>
+      </section>
+      <footer>
+        © 2015 Shutter Bug
+      </footer>
+    </main>
+  </body>
+</html>
