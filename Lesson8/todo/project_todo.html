@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <style>
+      /* CSS reset */
+      ul, ol { list-style: none; }
+      h1, h2, h3, h4, h5, h6, pre, code { font-size: 1em; }
+      ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
+      fieldset, input, dl, dt, dd, figure, figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      a img, :link img, :visited img, fieldset { border: none; }
+      address { font-style: normal; }
+      header, section, article, nav, footer, hgroup, details, summary, figure, main {
+        display: block;
+      }
+      mark {
+        color: inherit;
+        background-color: transparent;
+      }
+      abbr { border: none; }
+      summary::-webkit-details-marker { display: none; }
+      /* end reset */
+
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+
+      }
+
+      nav {
+        background-color: #464f77;
+        color:  #b2b5c3;
+        float: left;
+        width: 335px;
+        min-height: 820px;
+        position: relative;
+      }
+
+      nav ul {
+        margin-left: 100px;
+        margin-top: 70px;
+      }
+
+      nav li {
+        margin: 15px;
+      }
+
+      .nav-section-total {
+        position: absolute;
+        right: 40px;
+        text-align: right;
+        display: inline-block;
+        border-radius: 100px;
+        padding: 2px 6px;
+        background-color: #6b7292;
+      }
+
+      li:active {
+        border: 1px solid red;
+      }
+
+      .nav-section-title {
+        color: #ffffff;
+        position: relative;
+        left: 10px;
+        bottom: 8px
+      }
+
+      time {
+        margin-left: 24px;
+      }
+
+      .completed {
+        text-decoration: line-through;
+        color: #b2b5c3;
+      }
+
+      @media screen & (max-width: 767px) {
+        /* reorganize to hide the navbar */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul><img src="all-todos.png"><span class="nav-section-title">All Todos</span><span class="nav-section-total">18</span>
+        <li><time>02/16</time><span class="nav-section-total">8</span></li>
+        <li><time>02/16</time><span class="nav-section-total">8</span></li>
+        <li><time>02/16</time><span class="nav-section-total">8</span></li>
+        <li><time>02/16</time><span class="nav-section-total">8</span></li>
+        <li><time>02/16</time><span class="nav-section-total">8</span></li>
+      </ul>
+      <ul><img src="done.png"><span class="nav-section-title">Completed</span><span class="nav-section-total">18</span>
+        <li class="completed"><time>02/16</time></li>
+        <li class="completed"><time>02/16</time></li>
+        <li class="completed"><time>02/16</time></li>
+        <li class="completed"><time>02/16</time></li>
+        <li class="completed"><time>02/16</time></li>
+      </ul>
+
+      
+    </nav>
+    <main>
+      
+    </main>
+  </body>
+</html>
